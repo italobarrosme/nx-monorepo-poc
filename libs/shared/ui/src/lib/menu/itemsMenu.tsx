@@ -12,10 +12,9 @@ export type MenuItem = {
 export type ItemsMenuProps = {
   items: MenuItem[]
   isOpen: boolean
-  refs: any
 }
 
-export const ItemsMenu = ({ items, isOpen, refs }: ItemsMenuProps) => {
+export const ItemsMenu = ({ items, isOpen }: ItemsMenuProps) => {
   const [isOpenSub, setIsOpenSub] = useState(false)
 
   const handleClick = (ev: MouseEvent) => {
@@ -26,7 +25,7 @@ export const ItemsMenu = ({ items, isOpen, refs }: ItemsMenuProps) => {
   return (
     <>
       {isOpen ? (
-        <ul className="absolute mt-8" ref={refs}>
+        <ul className="absolute mt-8">
           {items?.map((item) =>
             item.subMenu ? (
               <li

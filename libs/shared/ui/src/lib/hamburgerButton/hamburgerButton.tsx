@@ -15,7 +15,7 @@ export const HamburgerButton = ({ isOpen, onClick }: HamburgerButtonProps) => {
   return (
     <>
       <button
-        className="group flex h-12 w-12 flex-col items-center justify-center rounded border-2 border-white"
+        className="group flex h-12 w-12 flex-col items-center justify-center rounded"
         onClick={handleClick}
       >
         <div
