@@ -9,11 +9,19 @@
   },
   "private": true,
   "dependencies": {
+    "@iconify/react": "^4.1.0",
     "@nrwl/next": "15.9.2",
+    "clsx": "^1.2.1",
+    "date-fns": "^2.29.3",
+    "jwt-decode": "^3.1.2",
     "next": "13.1.1",
+    "next-auth": "^4.21.1",
+    "nookies": "^2.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "usehooks-ts": "^2.9.1",
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
@@ -54,7 +62,8 @@
     "jsdom": "~20.0.3",
     "nx": "15.9.2",
     "postcss": "^8.4.21",
-    "prettier": "^2.6.2",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6",
     "react-test-renderer": "18.2.0",
     "tailwindcss": "^3.3.1",
     "ts-jest": "^29.0.5",

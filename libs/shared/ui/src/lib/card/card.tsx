@@ -7,10 +7,10 @@ export type CardProps = {
 
 export const Card = ({ img, title, description, text }: CardProps) => {
   return (
-    <figure className="bg-secondary-400 rounded-md max-w-sm">
-      <div className="flex justify-center items-center pt-4">
+    <figure className="bg-secondary-400 max-w-sm rounded-md">
+      <div className="flex items-center justify-center pt-4">
         <img
-          className="w-36 h-36 rounded-f rounded-md"
+          className="rounded-f h-36 w-36 rounded-md"
           src={img}
           alt=""
           width="384"

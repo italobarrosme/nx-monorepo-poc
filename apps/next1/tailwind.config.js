@@ -1,9 +1,7 @@
 const { createGlobPatternsForDependencies } = require('@nrwl/next/tailwind')
 const { join } = require('path')
 
-const {
-  presetTailwindCss
-} = require('./../../libs/shared/ui/src/lib/preset-tailwindcss/')
+const { presetTailwindCss } = require('./../../libs/shared/ui/src/lib/styles/')
 
 module.exports = {
   presets: [presetTailwindCss()],

@@ -18,7 +18,9 @@
       "@nx-monorepo-poc/shared/http-tool-kit": [
         "libs/shared/http-tool-kit/src/index.ts"
       ],
-      "@nx-monorepo-poc/shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@nx-monorepo-poc/shared/nextauth": ["libs/shared/nextauth/src/index.ts"],
+      "@nx-monorepo-poc/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@nx-monorepo-poc/shared/utils": ["libs/shared/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

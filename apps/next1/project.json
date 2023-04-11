@@ -10,7 +10,14 @@
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/next1",
-        "outputPath": "dist/apps/next1"
+        "outputPath": "dist/apps/next1",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/assets",
+            "output": "/assets/ui"
+          }
+        ]
       },
       "configurations": {
         "development": {

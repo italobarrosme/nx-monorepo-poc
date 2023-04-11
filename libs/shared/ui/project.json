@@ -17,7 +17,14 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/shared/ui"
+        "outputPath": "dist/libs/shared/ui",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/shared/ui/src/assets",
+            "output": "/assets/ui"
+          }
+        ]
       },
       "configurations": {
         "development": {
