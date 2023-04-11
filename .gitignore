@@ -4,13 +4,16 @@
 dist
 tmp
 /out-tsc
+.env.local
+.env
+apps/**/.env.local
+apps/**/.env
 
 # dependencies
 node_modules
 
 # IDEs and editors
-.env.local
-.env
+
 /.idea
 .project
 .classpath
@@ -42,3 +45,4 @@ Thumbs.db
 
 # Next.js
 .next
+apps/next1/.env.local
