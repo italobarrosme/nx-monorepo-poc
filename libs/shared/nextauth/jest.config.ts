@@ -9,5 +9,5 @@ export default {
     ]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/shared/nextauth'
+  coverageDirectory: '../../coverage/libs/shared/nextauth'
 }
