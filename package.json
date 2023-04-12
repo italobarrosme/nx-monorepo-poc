@@ -5,7 +5,7 @@
   "scripts": {
     "start:next1": "nx serve next1 --port 3001",
     "start:next2": "nx serve next2 --port 3002",
-    "test:ui": "nx test shared-ui",
+    "test:ui": "nx test ui",
     "lint": "eslint src --ext=ts"
   },
   "private": true,

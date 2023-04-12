@@ -3,16 +3,17 @@ export type CardProps = {
   title?: string
   text?: string
   description?: string
+  altImg?: string
 }
 
-export const Card = ({ img, title, description, text }: CardProps) => {
+export const Card = ({ img, title, description, text, altImg }: CardProps) => {
   return (
     <figure className="bg-secondary-400 max-w-sm rounded-md">
       <div className="flex items-center justify-center pt-4">
         <img
           className="rounded-f h-36 w-36 rounded-md"
           src={img}
-          alt=""
+          alt={altImg}
           width="384"
           height="512"
         />
