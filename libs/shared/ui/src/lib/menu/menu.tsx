@@ -17,7 +17,6 @@ export const Menu = ({ items }: MenuProps) => {
 
   const handleClickOutside = () => {
     setIsOpen(false)
-    console.log('click outside')
   }
 
   useOnClickOutside(ref, handleClickOutside)

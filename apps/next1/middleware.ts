@@ -14,10 +14,10 @@ export default async function middleware(req: NextRequest) {
     return NextResponse.redirect(req.nextUrl)
   }
 
-  if (!token?.accessToken && pathname !== '/login') {
-    req.nextUrl.pathname = '/login'
-    return NextResponse.redirect(req.nextUrl)
-  }
+  // if (!token?.accessToken && pathname !== '/login') {
+  //   req.nextUrl.pathname = '/login'
+  //   return NextResponse.redirect(req.nextUrl)
+  // }
 
   return NextResponse.next()
 }

@@ -32,7 +32,7 @@ export const ItemsMenu = ({ items, isOpen }: ItemsMenuProps) => {
                 onClick={(ev) => handleClick(ev)}
                 key={item.name}
                 className={clsx(
-                  'bg-primary-200 hover:bg-secondary-200  relative w-[320px] cursor-pointer p-2 text-white',
+                  'bg-primary-400 hover:bg-secondary-200  relative w-[320px] cursor-pointer p-2 text-white',
                   { 'bg-secondary-200': isOpenSub }
                 )}
               >

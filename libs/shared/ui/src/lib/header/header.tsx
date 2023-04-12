@@ -1,6 +1,13 @@
+import { Icon } from '@iconify/react'
 import { DateTime } from '../dateTime'
 import { HamburgerButton } from '../hamburgerButton'
 import { Menu, MenuItem } from '../menu/'
+
+type HeaderActions = {
+  action: () => void
+  icon: string
+  label: string
+}
 
 type DataUser = {
   name: string
@@ -10,9 +17,10 @@ type DataUser = {
 export type HeaderProps = {
   menu: MenuItem[]
   dataUser: DataUser
+  headerActions: HeaderActions[]
 }
 
-export const Header = ({ menu, dataUser }: HeaderProps) => {
+export const Header = ({ menu, dataUser, headerActions }: HeaderProps) => {
   return (
     <header className="bg-primary-200">
       <div>
@@ -30,7 +38,19 @@ export const Header = ({ menu, dataUser }: HeaderProps) => {
             Canal de Negócios - Postos Petrobras
           </h1>
         </div>
-        <div className="flex flex-col items-end justify-end text-white">
+        <div className="flex flex-col items-end justify-evenly text-white">
+          {/* actions */}
+          <div>
+            {headerActions.map((item) => (
+              <button
+                key={item.label}
+                className="text-white"
+                onClick={item.action}
+              >
+                <Icon icon={item.icon} width={24} />
+              </button>
+            ))}
+          </div>
           <p className="font-bold">{dataUser.name}</p>
           <p>{dataUser.email}</p>
           <div>
