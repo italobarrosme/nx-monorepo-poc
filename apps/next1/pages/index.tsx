@@ -3,16 +3,16 @@ import { useRouter } from 'next/router'
 import { useSession } from 'next-auth/react'
 
 export function Index() {
-  const { data: session } = useSession()
+  const sessionData = useSession()
   const { push } = useRouter()
 
   useEffect(() => {
-    if (!session) {
+    if (!sessionData) {
       push('/login')
     } else {
       push('/dashboard')
     }
-  }, [session, push])
+  }, [sessionData, push])
 
   return null
 }

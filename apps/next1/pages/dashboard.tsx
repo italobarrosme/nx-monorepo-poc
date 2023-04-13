@@ -48,7 +48,7 @@ const Dashboard = () => {
     {
       action: async () => {
         await signOut({ redirect: false })
-        logout().then(({ path }) => {
+        logout().then(() => {
           router.push('/example')
         })
       },
